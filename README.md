@@ -1,16 +1,15 @@
 # freelog
 
-A new Flutter project.
+Una aplicación para registrar entrenamientos, con mucho enfoque en entrenamiento con pesas.
 
-## Getting Started
+Desde hace años uso [FitNotes](http://www.fitnotesapp.com/), una aplicación sencilla y que hace una sóla cosa bien: registrar mis entrenamientos.
 
-This project is a starting point for a Flutter application.
+Sin embargo, hay algunas cosas que no me gustan de FitNotes:
 
-A few resources to get you started if this is your first Flutter project:
+- No es de código abierto
+- El registro de ejercicios es poco flexible. Hay algunas funcionalidades extras detrás de una pared de pago, pero hacen falta muchas más: Registro de escalas subjetivas como RPE y RIR, registro y planeación de tiempos de descanso, inclusión practica del peso corporal dentro de los registros, entre otras
+- Las funciones de análisis del historial de entrenamientos es poco flexible - con interpretaciones muy ceñidas a lo poco que se sabe sobre los ejercicios que se realizan
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Hay otras aplicaciones de código abierto para registrar entrenamientos, como [Wger](https://wger.de), pero tampoco me agradaron a primera vista y tienen muchas funcionalidades que yo no deseo.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Así, la idea es crear una aplicación muy sencilla que haga todo lo que podía con FitNotes y más, y de paso que sea de código abierto.
