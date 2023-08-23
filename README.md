@@ -12,4 +12,4 @@ Sin embargo, hay algunas cosas que no me gustan de FitNotes:
 
 Hay otras aplicaciones de código abierto para registrar entrenamientos, como [Wger](https://wger.de), pero tampoco me agradaron a primera vista y tienen muchas funcionalidades que yo no deseo.
 
-Así, la idea es crear una aplicación muy sencilla que haga todo lo que podía con FitNotes y más, y de paso que sea de código abierto.
+Así, la idea es crear una aplicación muy sencilla que haga todo lo que podía con FitNotes y (solo un poco) más, que sea de código abierto.
