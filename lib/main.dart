@@ -68,7 +68,7 @@ class MyHomePage extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text(title),
       ),
-      body: Stack(
+      body: Column(
         children: [
           Row(
             children: [
@@ -79,6 +79,28 @@ class MyHomePage extends StatelessWidget {
               IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_right)),
             ],
           ),
+          Container(
+            color: const Color.fromARGB(255, 204, 204, 204),
+            margin: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
+            child: const Column(children: [
+              Row(
+                children: [
+                  Text("Sentadilla"),
+                  Spacer(),
+                ],
+              ),
+              Divider(
+                color: Colors.black,
+              ),
+              Row(
+                children: [Text("150kg"), Spacer(), Text("2 repeticiones")],
+              )
+            ]),
+          ),
+          // const Spacer(),
+          // const Text("Presiona el botón para añadir un ejercicio."),
+          // const Spacer(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
