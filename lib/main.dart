@@ -73,34 +73,34 @@ class MyHomePage extends StatelessWidget {
           Row(
             children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_left)),
-              const Spacer(),
-              const Text("Hoy"),
-              const Spacer(),
+              const Expanded(child: Center(child: Text("Hoy"))),
               IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_right)),
             ],
           ),
-          Container(
-            color: const Color.fromARGB(255, 204, 204, 204),
-            margin: const EdgeInsets.all(10.0),
-            padding: const EdgeInsets.all(10.0),
-            child: const Column(children: [
-              Row(
-                children: [
-                  Text("Sentadilla"),
-                  Spacer(),
-                ],
-              ),
-              Divider(
-                color: Colors.black,
-              ),
-              Row(
-                children: [Text("150kg"), Spacer(), Text("2 repeticiones")],
+          // Container(
+          //   color: const Color.fromARGB(255, 204, 204, 204),
+          //   margin: const EdgeInsets.all(10.0),
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: const Column(children: [
+          //     Row(
+          //       children: [
+          //         Text("Sentadilla"),
+          //         Spacer(),
+          //       ],
+          //     ),
+          //     Divider(
+          //       color: Colors.black,
+          //     ),
+          //     Row(
+          //       children: [Text("150kg"), Spacer(), Text("2 repeticiones")],
+          //     )
+          //   ]),
+          // ),
+          const Expanded(
+            child: Center(
+                child: Text("Presiona el botón para añadir un ejercicio."),
               )
-            ]),
-          ),
-          // const Spacer(),
-          // const Text("Presiona el botón para añadir un ejercicio."),
-          // const Spacer(),
+            ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
