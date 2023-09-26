@@ -36,6 +36,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class ExerciseList {
+  get content => const Text("Presiona el botón para añadir un ejercicio.");
+}
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -96,11 +100,10 @@ class MyHomePage extends StatelessWidget {
           //     )
           //   ]),
           // ),
-          const Expanded(
-            child: Center(
-                child: Text("Presiona el botón para añadir un ejercicio."),
-              )
-            ),
+          Expanded(
+              child: Center(
+            child: ExerciseList().content,
+          )),
         ],
       ),
       floatingActionButton: FloatingActionButton(
