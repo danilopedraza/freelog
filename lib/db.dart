@@ -1,9 +1,7 @@
 class Database {
   static final Database instance = Database.createInstance();
 
-  factory Database() {
-    return instance;
-  }
+  factory Database() => instance;
 
   Database.createInstance();
 }
