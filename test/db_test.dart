@@ -4,7 +4,7 @@ import 'package:freelog/db.dart';
 void main() {
   group('The Database object', () {
     test('Should be unique', () {
-      expect(identical(Database(), Database()), equals(true));
+      expect(Database(), same(Database()));
     });
   });
 }
