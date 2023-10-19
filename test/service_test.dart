@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 Future main() async {
-
   setUpAll(() {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
@@ -16,7 +15,7 @@ Future main() async {
   group('Service()', () {
     group('.openOrCreateDB()', () {
       test('should create the DB if it is not there', () async {
-        final Database db = await Service.openOrCreateDB();
+        await Service.openOrCreateDB();
         expect(await databaseExists('freelog.db'), isTrue);
       });
     });

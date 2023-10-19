@@ -8,9 +8,9 @@ class Service {
   static Future<Service> withDB() async => Service(await openOrCreateDB());
 
   static Future<Database> openOrCreateDB() async => openDatabase(
-    'freelog.db',
-    version: 1,
-    onCreate: (db, version) => db.execute('''
+        'freelog.db',
+        version: 1,
+        onCreate: (db, version) => db.execute('''
       CREATE TABLE TRAINING_SESSION (
         id INTEGER PRIMARY KEY,
         date TEXT
@@ -21,5 +21,5 @@ class Service {
         FOREIGN KEY (training_session) REFERENCES TRAINING_SESSION(id) 
       )
     '''),
-  );
+      );
 }
