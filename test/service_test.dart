@@ -8,8 +8,14 @@ Future main() async {
     databaseFactory = databaseFactoryFfi;
   });
 
-  tearDownAll(() {
-    // Maybe delete the database here
+  setUp(() async {
+    if (await databaseExists('freelog.db')) {
+      deleteDatabase('freelog.db');
+    }
+  });
+
+  tearDownAll(() async {
+    await deleteDatabase('freelog.db');
   });
 
   group('Service()', () {
