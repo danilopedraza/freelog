@@ -8,15 +8,9 @@ Future main() async {
     databaseFactory = databaseFactoryFfi;
   });
 
-  setUp(() async {
-    if (await databaseExists('freelog.db')) {
-      deleteDatabase('freelog.db');
-    }
-  });
+  setUp(() async => deleteDatabase('freelog.db'));
 
-  tearDownAll(() async {
-    await deleteDatabase('freelog.db');
-  });
+  tearDownAll(() async => deleteDatabase('freelog.db'));
 
   group('Service()', () {
     group('.openOrCreateDB()', () {
