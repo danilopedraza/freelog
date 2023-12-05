@@ -1,7 +1,7 @@
 # Tareas pendientes
 
 - [ ] Crear todas las pantallas
-    - [ ] Pantalla principal
+    - [x] Pantalla principal
     - [ ] Búsqueda de ejercicios
     - [ ] Edición de un ejercicio
 

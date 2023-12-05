@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         body: const MainPage(
           exercises: [
             ExerciseSession(
-              exerciseName: 'Squat',
+              exerciseName: 'Sentadilla',
               work: [
                 RepSet(reps: 5, load: 100),
                 RepSet(reps: 5, load: 100),
@@ -25,6 +25,11 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.brown,
+          child: const Icon(Icons.add),
         ),
       ),
     );
@@ -44,7 +49,7 @@ class MainPage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(16.0),
           child: const Text(
-            'Today\'s workout',
+            'Entrenamiento de hoy',
             style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
           ),
         ),
