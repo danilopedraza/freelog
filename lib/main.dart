@@ -9,29 +9,18 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Freelog'),
-          backgroundColor: Colors.brown,
-        ),
-        body: const MainPage(
-          exercises: [
-            ExerciseSession(
-              exerciseName: 'Sentadilla',
-              work: [
-                RepSet(reps: 5, load: 100),
-                RepSet(reps: 5, load: 100),
-                RepSet(reps: 5, load: 100),
-              ],
-            ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.brown,
-          child: const Icon(Icons.add),
-        ),
+    return const MaterialApp(
+      home: MainPage(
+        exercises: [
+          ExerciseSession(
+            exerciseName: 'Sentadilla',
+            work: [
+              RepSet(reps: 5, load: 100),
+              RepSet(reps: 5, load: 100),
+              RepSet(reps: 5, load: 100),
+            ],
+          ),
+        ],
       ),
     );
   }

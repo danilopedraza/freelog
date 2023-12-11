@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freelog/add_exercise/screen.dart';
 
 class MainPage extends StatelessWidget {
   final List exercises;
@@ -7,18 +8,34 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          child: const Text(
-            'Entrenamiento de hoy',
-            style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Freelog'),
+        backgroundColor: Colors.brown,
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            child: const Text(
+              'Entrenamiento de hoy',
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
           ),
-        ),
-        ...exercises,
-      ],
+          ...exercises,
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AddExercise()),
+          );
+        },
+        backgroundColor: Colors.brown,
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
