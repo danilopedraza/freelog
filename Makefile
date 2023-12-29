@@ -1,6 +1,7 @@
 test-ci:
 	flutter pub get
 	dart format --output=none --set-exit-if-changed .
+	dart run build_runner build
 	flutter analyze --fatal-infos
 	flutter test
 
